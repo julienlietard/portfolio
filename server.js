@@ -4,12 +4,13 @@ const path = require('path');
 
 const app = express();
 
-// Serve only the static files form the dist directory
+// Nom de l'application en local
 app.use(express.static('./dist/my-portfolio'));
 
+// Nom de l'application serveur
 app.get('/*', (req, res) =>
   res.sendFile('index.html', {root: 'dist/portfolio-julienlietard/'}),
 );
 
-// Start the app by listening on the default Heroku port
+// Port du serveur
 app.listen(process.env.PORT || 8080);

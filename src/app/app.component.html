@@ -13,10 +13,8 @@
       <li routerLinkActive="active"><a class="nav-link menu-button" routerLink="/skills">Compétences</a></li>
       <li routerLinkActive="active"><a class="nav-link menu-button" routerLink="/contact">Me contacter</a></li>
     </ul>
-    <!--
-    <a class="mode night" href="#"><i class="bi bi-moon-fill"></i></a>
-    <a class="mode light" href="#"><i class="bi bi-brightness-high-fill"></i></a>
-    -->
+    <app-nightmode *ngIf="(mode.currentMode() ==='light')"></app-nightmode>
+    <app-lightmode *ngIf="(mode.currentMode() ==='night')"></app-lightmode>
   </div>
 </nav>
 

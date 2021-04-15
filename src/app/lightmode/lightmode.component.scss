@@ -1,0 +1,18 @@
+.mode {
+  color: #252525;
+  margin-inline-end: 10px;
+}
+
+.light {
+  font-size: 25px;
+}
+
+.night {
+  font-size: 25px;
+}
+
+.mode:hover {
+  color: #e84855;
+  transition: 0.6s;
+  cursor: pointer;
+}

@@ -7,6 +7,16 @@
   letter-spacing: 4px;
 }
 
+section {
+  padding: 1% 0;
+  position: relative;
+}
+
+.gray-bg {
+  background-color: #f5f5f5;
+  padding-top: 5%;
+}
+
 .text-principal {
   color: #e84855;
 }
@@ -34,6 +44,7 @@ img {
 }
 
 .jumbotron {
+  padding-top: 10%;
   display: flex;
   background-color: #f5f5f5;
 }

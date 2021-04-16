@@ -6,12 +6,12 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li routerLinkActive="active"><a class="nav-link menu-button" routerLink="/">Accueil</a></li>
-      <li routerLinkActive="active"><a class="nav-link menu-button" routerLink="/about">Infos</a></li>
-      <li routerLinkActive="active"><a class="nav-link menu-button" routerLink="/experiences">Expériences</a></li>
-      <li routerLinkActive="active"><a class="nav-link menu-button" routerLink="/projects">Projets</a></li>
-      <li routerLinkActive="active"><a class="nav-link menu-button" routerLink="/skills">Compétences</a></li>
-      <li routerLinkActive="active"><a class="nav-link menu-button" routerLink="/contact">Me contacter</a></li>
+      <li routerLinkActive="active"><a class="nav-link menu-button" href="/#home">Accueil</a></li>
+      <li routerLinkActive="active"><a class="nav-link menu-button" href="#about">Infos</a></li>
+      <li routerLinkActive="active"><a class="nav-link menu-button" href="#experiences">Expériences</a></li>
+      <li routerLinkActive="active"><a class="nav-link menu-button" href="#projects">Projets</a></li>
+      <li routerLinkActive="active"><a class="nav-link menu-button" href="#skills">Compétences</a></li>
+      <li routerLinkActive="active"><a class="nav-link menu-button" href="#contact">Me contacter</a></li>
     </ul>
     <app-nightmode *ngIf="(mode.currentMode() ==='light')"></app-nightmode>
     <app-lightmode *ngIf="(mode.currentMode() ==='night')"></app-lightmode>
@@ -20,3 +20,21 @@
 
 <!-- Les pages -->
 <router-outlet></router-outlet>
+<div id="home">
+  <app-home></app-home>
+</div>
+<div id="about">
+  <app-about></app-about>
+</div>
+<div id="experiences">
+  <app-experiences></app-experiences>
+</div>
+<div id="projects">
+  <app-projects></app-projects>
+</div>
+<div id="skills">
+  <app-skills></app-skills>
+</div>
+<div id="contact">
+  <app-contact></app-contact>
+</div>

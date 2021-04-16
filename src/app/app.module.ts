@@ -12,6 +12,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { NightmodeComponent } from './nightmode/nightmode.component';
 import { LightmodeComponent } from './lightmode/lightmode.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LightmodeComponent } from './lightmode/lightmode.component';
     SkillsComponent,
     ContactComponent,
     NightmodeComponent,
-    LightmodeComponent
+    LightmodeComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

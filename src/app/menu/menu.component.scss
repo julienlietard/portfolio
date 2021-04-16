@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@700&family=Teko&display=swap');
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand {
+  font-family: 'Teko', sans-serif;
+  font-size: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 30px;
+  margin-inline-start: 25px;
+  letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav {
+  margin-inline-start: auto;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e84855;
+  transition: 0.6s;
+}
+
+.navbar-light .navbar-brand {
+  font-size: 40px;
+  margin-inline-start: 2%;
+  letter-spacing: 3px;
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: #e84855;
+}
+
+html {
+  scroll-behavior: smooth;
+}

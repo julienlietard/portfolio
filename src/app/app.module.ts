@@ -13,6 +13,8 @@ import { ContactComponent } from './contact/contact.component';
 import { NightmodeComponent } from './nightmode/nightmode.component';
 import { LightmodeComponent } from './lightmode/lightmode.component';
 import { IndexComponent } from './index/index.component';
+import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { IndexComponent } from './index/index.component';
     ContactComponent,
     NightmodeComponent,
     LightmodeComponent,
-    IndexComponent
+    IndexComponent,
+    FooterComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
